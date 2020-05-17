@@ -1,0 +1,16 @@
+.gridSize {
+  margin: 100px 0 0;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+.testingDiv {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 0px;
+  background-color: salmon;
+}

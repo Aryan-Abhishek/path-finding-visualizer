@@ -1,0 +1,11 @@
+.node {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.click-state {
+  background-color: red;
+}
