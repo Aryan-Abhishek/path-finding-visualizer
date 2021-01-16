@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import PathVisualizer from './PathVisualizer/PathVisualizer';
+import PathVisualizer from './components/pathVisualizer/PathVisualizer';
 
 class App extends Component {
   render() {
