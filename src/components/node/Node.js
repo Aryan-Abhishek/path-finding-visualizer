@@ -3,7 +3,16 @@ import './Node.css';
 
 class Node extends Component {
   render() {
-    const {row, col, isStart, isFinish, isWall} = this.props;
+    const {
+      row,
+      col,
+      isStart,
+      isFinish,
+      isWall,
+      onMouseDown,
+      onMouseEnter,
+      onMouseUp,
+    } = this.props;
 
     // check for class condition
     const extraClassName = isFinish
@@ -15,7 +24,12 @@ class Node extends Component {
       : '';
 
     return (
-      <div id={`node-${row}-${col}`} className={`node ${extraClassName}`}></div>
+      <div
+        id={`node-${row}-${col}`}
+        className={`node ${extraClassName}`}
+        onMouseDown={() => onMouseDown(row, col)}
+        onMouseEnter={() => onMouseEnter(row, col)}
+        onMouseUp={() => onMouseUp()}></div>
     );
   }
 }
